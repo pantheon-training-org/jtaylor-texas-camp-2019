@@ -80,7 +80,16 @@
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ]
     },
-    "extra": {
+
+    "extra": { 
+        "enable-patching": true,
+    "composer-exit-on-patch-failure": true,
+    "patches": {
+        "drupal/address": {
+            "The locality.name data is missed in PlainFormater": "https://www.drupal.org/files/issues/locality-name-data-missed-plainformater-2881391-1.patch"
+        }
+    },
+
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],
