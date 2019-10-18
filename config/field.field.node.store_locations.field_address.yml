@@ -1,0 +1,39 @@
+uuid: 338f5cc9-8238-4300-8bfa-351e60058a89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.store_locations
+  module:
+    - address
+id: node.store_locations.field_address
+field_name: field_address
+entity_type: node
+bundle: store_locations
+label: Address
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    country_code: US
+    langcode: ''
+    given_name: Jane
+    family_name: Doe
+    organization: '123 Wisteria Lane'
+    address_line1: ''
+    address_line2: ''
+    locality: Birmingham
+    administrative_area: AL
+    postal_code: '35007'
+    additional_name: null
+    sorting_code: null
+    dependent_locality: null
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address
